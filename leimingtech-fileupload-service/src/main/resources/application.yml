@@ -1,0 +1,53 @@
+#DUBBO
+dubbo:
+  application:
+    name: leimingtech-fileupload
+    owner: panda
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    basePackages:  com.leimingtech.fileupload.service.**
+
+#  monitor:
+#    enabled: false
+#    address: localhost:6060
+#    username: admin
+#    password: admin
+
+server:
+# 访问端口
+  port: 8083
+  tomcat:
+    uri-encoding: UTF-8
+#上下文路径
+  context-path: /
+  session:
+    cookie:
+#      http-only: true
+#      secure: true
+
+##fastdfs连接池设置
+spring:
+  fastdfs:
+#连接池最大连接数
+    maxPoolSize: 30
+#等待时间（单位：秒）
+    waitTimes: 400
+#连接池最小连接数
+    minPoolSize: 20
+
+##datasource
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: spzxdb
+    password: spzx@db.com
+    url: jdbc:mysql://111.160.33.74:65513/productcenter?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+
+
+##mongodb
+  data:
+    mongodb:
+      host: 127.0.0.1
+      post: 27017
+      database: test

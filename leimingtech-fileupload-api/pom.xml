@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>leimingtech-fileupload-parent</artifactId>
+        <groupId>com.leimingtech</groupId>
+        <version>1.2-SNAPSHOT</version>
+        <relativePath>../leimingtech-fileupload-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>leimingtech-fileupload-api</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.leimingtech</groupId>
+            <artifactId>leimingtech-fileupload-framework</artifactId>
+            <version>1.2-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
+</project>

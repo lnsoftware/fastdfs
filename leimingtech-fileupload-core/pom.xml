@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>leimingtech-fileupload-parent</artifactId>
+        <groupId>com.leimingtech</groupId>
+        <version>1.2-SNAPSHOT</version>
+        <relativePath>../leimingtech-fileupload-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.leimingtech</groupId>
+    <artifactId>leimingtech-fileupload-core</artifactId>
+    <version>1.2-SNAPSHOT</version>
+
+    <dependencies>
+        <!--commmon-->
+        <dependency>
+            <groupId>com.leimingtech</groupId>
+            <artifactId>leimingtech-fileupload-common</artifactId>
+        </dependency>
+
+        <!-- JDBC驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+    </dependencies>
+</project>
